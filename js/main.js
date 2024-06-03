@@ -160,7 +160,7 @@ function hd1() {
 
 */
 
-/*
+
 function loadn() {
     var a = [["about",
         "gs"],
@@ -299,7 +299,7 @@ function loadn() {
 
 loadn();
 
-*/
+
 
 
 
