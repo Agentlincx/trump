@@ -23,12 +23,12 @@ a:hover {
 
 @font-face {
     font-family: fon;
-    src: url('../font/fon.ttf');
+    src: url('/font/fon.ttf');
 }
 
 
 
-/*med*
+/*med*/
 
 @media screen and (min-width:768px) {
     html {
@@ -41,6 +41,16 @@ a:hover {
 
     #lnav {
         display: grid;
+    }
+    
+    #p2>div {
+      display: grid;
+      grid-template-columns: 60% max-content
+    }
+    
+    #p1>div>div:first-child {
+      display: grid;
+      grid-template-columns: 40% auto;
     }
 }
 
@@ -74,7 +84,6 @@ a:hover {
 
 #snav, #lnav {
     font-size: 1rem;
-    padding: 0em;
     font-size: 1rem;
 }
 
@@ -250,12 +259,15 @@ a:hover {
 
 #lnav>#nav {
     align-items: center !important;
+    color: #fff;
 }
 
 #lnav>#nav {
     display: grid;
     grid-template-columns: max-content auto;
     justify-content: space-between;
+    background-color: #0B3162 !important;
+    padding: 1em;
 }
 
 #lnav>#nav>div:nth-child(2) {
@@ -311,7 +323,13 @@ a:hover {
 
 #p1 {
   text-align: center;
-  background-color: blue;
+  background-image: url('/img/bac.jpeg');
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    height: 700px;
   height: 100vh;
   padding: 2em;
 }
@@ -330,13 +348,14 @@ a:hover {
 }
 
 #p1>div>div>img {
-  height: 260px;
+  height: 400px;
   width: 100%;
 }
 
 #p1>div>div>div>p {
-  font-size: 4em;
+  font-size: 5em;
   font-weight: 900;
+  color: #fff;
 }
 
 #p1>div>p {
@@ -380,6 +399,11 @@ a:hover {
   display: grid;
   grid-template-columns: max-content max-content;
   grid-gap: 2rem;
+}
+
+#p2 img {
+  height: 500px !important;
+  margin: 2em 0
 }
 
 #p2>div:nth-child(2)>a {
